@@ -4,9 +4,14 @@ const  App =()=> {
   const [count , setCount]=useState(0)
   const ADD = ()=>{
     setCount(count + 1)
+    
   }
 
   const LESS = ()=>{
+    if (count < 1) {
+      console.log("set count wala kam nh krwana");
+      return
+    }
     setCount(count - 1)
   }
 
